@@ -4,8 +4,6 @@ public class Hamburguer1 implements Hamburguer{
 
     float precoLanche;
 
-    Categoria categoria;
-
     public Hamburguer1(float precoLanche){
         this.precoLanche = precoLanche;
     }
@@ -13,7 +11,7 @@ public class Hamburguer1 implements Hamburguer{
 
     @Override
     public float getPrecoLanche() {
-        return this.categoria.getPrecoAlterado(this.precoLanche);
+        return this.precoLanche;
     }
 
     @Override
@@ -21,7 +19,4 @@ public class Hamburguer1 implements Hamburguer{
         return "Hamburguer1";
     }
 
-    public void setCategoria(Categoria categoria) {
-        this.categoria = categoria;
-    }
 }
