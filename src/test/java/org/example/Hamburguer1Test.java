@@ -9,7 +9,9 @@ class Hamburguer1Test {
     @Test
     void deveRetornarHamburguerBasico(){
         Hamburguer hamburguer = new Hamburguer1(15.00f);
-        assertEquals(15.00f,hamburguer.getPrecoLanche());
+        Categoria categoria = new Gourmet();
+        hamburguer.s
+        assertEquals(30.0f,hamburguer.getPrecoLanche());
     }
 
     @Test
